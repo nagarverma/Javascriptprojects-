@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #show{
+            width: 300px;
+            height: 300px;
+            border: 3px black solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="show"></div>
+    <input type="file" id="file" onchange="stp()" accept=".jpg">
+    <script>
+        function stp(){
+            var file = document.getElementById("file").value.replace(/.*(\/|\\)/,'');
+            window.alert(file)
+            var b = document.getElementById("show");
+            b.style.backgroundImage="url("+file+")";
+
+        }
+
+
+    </script>
+</body>
+</html>

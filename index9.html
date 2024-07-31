@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="iii.jpg" width="100%" id="pic">
+    <button onclick="abc()" id="hide_btn">Hide</button>
+    
+
+
+
+
+    <script>
+       function abc(){
+        var picture=document.getElementById("pic");
+        var button=document.getElementById("hide_btn");
+        var text_btn=button.innerHTML;
+        picture.style.display="none";
+        button.innerHTML="show";
+
+
+        if(text_btn=="show")
+        {
+            picture.style.display="block";
+            button.innerHTML="Hide";
+        }
+        else
+        {
+
+        }
+        
+
+
+
+
+    }
+            
+    
+        
+    </script>
+</body>
+</html>

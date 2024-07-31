@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <input type="password" name="password" id="pass">
+        <button  return onclick="stp()">check</button>
+        <p id="msg"></p>
+   
+
+
+    
+
+    <script>
+      function stp(){
+        var capital = /[A-Z]/g;
+        var lower= /[a-z]/g;
+        var number = /[0-9]/g;
+        var user =document.getElementById("pass").value;
+          var reslut= user.match(capital)&&user.match(lower)&&user.match(number)?"emil is accepted":"email is not accepted";
+          document.getElementById("msg").innerHTML=reslut;
+          return false ;
+
+
+    
+      }
+
+       
+
+    </script>
+</body>
+</html>

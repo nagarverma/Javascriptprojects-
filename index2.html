@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 200px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            font-family:century gothic;
+        }
+        form{
+            float: left;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            border: 3px black solid;
+            margin: -270px auto;
+        }
+    </style>
+</head>
+<body
+    <form>
+        Name<br>
+        <input type="text" id="user"><br><br>
+        Father<br>
+        <input type="text" id="user2"><br><br>
+        Alternate No.<br>
+        <input type="number" id="user3"><br><br>
+        <address >
+        <textarea  id="text4"> </textarea>
+        <button onclick="stp()">submit</button>
+        </address>
+        <div id="box">
+            
+                <h2 align="center">create address APKS</h2>
+                <hr>
+            <p id="text" > </p>
+            <button onclick="bol" id="bol">bold</button>
+            <button onclick="ita" id="bol">bold</button>
+            <button onclick="norm" id="bol">bold</button>
+            <button onclick="back" id="bol">bold</button>
+            
+        </div>
+
+
+    </form>
+    <script>
+        function stp(){
+            var a =document.getElementById("user").value;
+            var b =document.getElementById("user2").value;
+            var c =document.getElementById("user3").value;
+            var d =document.getElementById("text4").value;
+            var total=a+b+c+d;
+            var g =document.getElementById("text");
+            g.innerHTML=total;
+            
+            
+
+
+            
+        }
+
+
+
+
+        function bol(){
+            var a=Document.getElementById("bol");
+            a.style.fontWeight="bold";
+
+        }
+    </script>
+    
+</body>
+</html>

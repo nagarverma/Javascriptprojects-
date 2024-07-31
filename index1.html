@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <header><h1>Nagar video Player</h1></header>
+    <section>
+        <video src="Sanjog_(Full_Song)_Mehtab_Virk_Ft_Sonia_Mann___Dr_Shree___Urs_Guri___Latest_Punjabi_Songs_2020(1080p).mp4" width="100%" height="400px" id="vdeo" controls="controls"></video>
+    </section>
+    <footer>
+        <button onclick="vPlay()" id="play">Play</button>
+        <button onclick="vPause()" id="pause">Pause</button>
+    </footer>
+    <script>
+        function vPlay(){
+            var  a = document.getElementById("vdeo");
+            a.play();
+        }
+        function vPause(){
+            var a = document.getElementById("vdeo");
+            a.pause();
+        }
+        function vuload(){
+            var a = document.getElementById("vpload").value.replace(/.*(\/|\\)/,'');
+            var b = document.getElementById("vdeo");
+            b.src=a;
+
+
+            
+        }
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

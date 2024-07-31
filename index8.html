@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    div{
+        width: 400px;
+        height: 500px;
+        border: 10px blue solid;
+        border-radius: 30px;
+        padding: 25px;
+        background-color: olive;
+    }
+    input,#total{
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+    }
+    button{
+        width: 60px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #dedede;
+        
+        margin: 5px;
+        font-size: 18px;
+        
+    }
+    header{
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        font-family: sans-serif;
+        border-radius: 10px;
+        width: 200px;
+        height: 40px;
+        padding: 5px;
+        color:white;
+        margin-top: -40px;
+    }
+    nav{
+        margin: 10px;
+        margin-top: 30px;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: blue;
+        margin-top: 100px;
+        border-radius: 7px;
+        
+
+        
+        
+    }
+    h3{
+    }
+</style>
+<body>
+    <div>
+        
+        <center>
+            <header><h1>calucalator</h1></header>
+            
+        <input type="text" id="first">
+        <input type="text" id="sec">
+        
+    </center>
+        <hr>
+        <center>
+        <button onclick="b()">Sub(-)</button>
+        <button onclick="a()">Add(+)</button>
+        <button onclick="c()">Mul(*)</button>
+        <button onclick="d()">Div(/)</button>
+        <h1 id="result"></h1> 
+    </center>
+    <nav>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+       
+        
+    </nav>
+
+
+
+
+
+<hr>
+<footer>
+    <center>
+        <h3>Developed BY : jitendra Nagar</h3>
+
+    </center>
+</footer>
+    </div>
+    <script>
+        function a(){
+            var first = Number(document.getElementById("first").value);
+            var sec =Number(document.getElementById("sec").value);
+
+            add(first,sec);
+        }
+        function add(x,y){
+            var total= document.getElementById("result");
+            window.alert(x+y)
+            
+            
+
+        }
+
+        function b(){
+            var first = Number(document.getElementById("first").value);
+            var sec =Number(document.getElementById("sec").value);
+            sub(first,sec);
+        }
+        function sub(x,y){
+            window.alert(x-y);
+            
+
+        }
+
+        function c(){
+            var first = Number(document.getElementById("first").value);
+            var sec =Number(document.getElementById("sec").value);
+            mul(first,sec);
+        }
+        function mul(x,y){
+            window.alert(x*y);
+            
+
+        }
+
+        function d(){
+            var first = Number(document.getElementById("first").value);
+            var sec =Number(document.getElementById("sec").value);
+            div(first,sec);
+        }
+        function div(x,y){
+            window.alert(x/y);
+            
+
+        }
+
+        
+    </script>
+   
+</body>
+</html>

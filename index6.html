@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<style>
+#spin{
+   margin: 20px; 
+   
+}
+span{
+    font-family: sans-serif;
+    color: red;
+    font-size: 30px;
+    margin: 20px;
+}
+</style>
+<body>
+    <input type="text" name="text" id="user" onclick="stp()" placeholder="username" oninput="check()">
+    <button onclick="stp">check</button>
+    <span id="text"></span><i class="fas fa-spinner fa-spin" id="spin" style="opacity: 0;"></i>
+    <i class="fas fa-check" style="opacity: 0;" id="check"></i>
+
+
+    <script>
+       function stp(){
+        var msg = document.getElementById("text");
+        msg.innerHTML="Please wriet 10 digit Number";
+       }
+       function check(){
+        var msg = document.getElementById("text");
+        msg.style.display="none";
+        
+        var spin = document.getElementById("spin");
+        spin.style.opacity="1";
+
+        var user = document.getElementById("user").value;
+         var len= user.length;
+
+         var check =document.getElementById("check");
+         len>10 ? check.style.opacity="1":spin.style.opacity="1";
+        len>10 ? spin.style.opacity="0":check.style.opacity="0";
+
+
+
+
+
+
+       }
+
+
+
+
+    </script>
+</body>
+</html>
